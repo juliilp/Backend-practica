@@ -1,11 +1,11 @@
 // Importar Express
 const express = require("express");
-const bodyparse = require("body-parser");
+// const bodyparse = require("body-parser");
 // Crear una instancia de la aplicación
 const app = express();
 
-app.use(bodyparse.urlencoded({ extended: true }));
-app.use(bodyparse.json());
+// app.use(bodyparse.urlencoded({ extended: true }));
+// app.use(bodyparse.json());
 // Definir una ruta con la función controladora
 app.get("/", function (req, res) {
   res.send("Hola mundo!");
